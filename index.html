@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>UPWARD Legal</title>
+    <script>
+        const userLang = (navigator.language || navigator.userLanguage).split('-')[0];
+        const supportedLangs = ['pt', 'en'];
+        const finalLang = supportedLangs.includes(userLang) ? userLang : 'en';
+        window.location.href = `./${finalLang}/privacy.html`;
+    </script>
+</head>
+<body><p>Redirecting...</p></body>
+</html>
